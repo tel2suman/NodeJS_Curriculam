@@ -10,6 +10,10 @@ app.get('/about', (req, res)=>{
     res.send("About page");
 })
 
+app.get('/services',(req, res)=>{
+    res.send("Services Page");
+})
+
 app.get('/contact', (req, res)=>{
     res.send("Contact Page");
 })
