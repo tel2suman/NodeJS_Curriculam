@@ -1,0 +1,120 @@
+/* Google Fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap");
+
+body {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Google Sans", sans-serif !important;
+}
+
+p {
+  color: inherit;
+  font-family: "Google Sans", sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: "Google Sans", sans-serif !important;
+}
+
+ul {
+  list-style: none;
+}
+
+ol {
+  list-style: circle;
+}
+
+a {
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+a,
+a:hover {
+  text-decoration: none !important;
+}
+
+.list-disc {
+  list-style: disc;
+}
+
+.container {
+  max-width: 1550px !important;
+}
+
+.jumbo {
+  background-image: linear-gradient(
+      rgba(47, 48, 67, 0.3),
+      rgba(47, 48, 67, 0.3)
+    ),
+    url(../../images/pexels-pixabay-273209.jpg);
+  background-size: cover;
+  height: 600px;
+  background-attachment: fixed;
+}
+
+/* nav tab */
+
+.nav-tabs .nav-link {
+  border: var(--bs-nav-tabs-border-width) transparent;
+}
+
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover {
+  border-color: transparent !important;
+}
+
+.field-control {
+  display: block;
+  width: 100%;
+  padding: 8px 20px 8px 15px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #000000;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #ffffffbf;
+  background-clip: padding-box;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+/* Job Post Item */
+
+.job-post-item:hover,
+.job-post-item:focus {
+  -webkit-box-shadow: 0 0 40px -5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 40px -5px rgba(0, 0, 0, 0.2);
+  top: -5px;
+  z-index: 2;
+}
+
+.icon-square {
+  padding: 16px;
+  border-radius: 12px;
+}
+
+/* Blog Section */
+
+.owl-theme .owl-nav.disabled + .owl-dots {
+  margin-top: 35px !important;
+}
+
+/* End Of Blog Section */
