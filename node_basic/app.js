@@ -1,22 +1,20 @@
 const express = require('express');
+const path = require('path');
+const ejs = require('ejs');
 
 const app = express();
 
-app.get('/', (req, res)=>{
-    res.send("Home page");
-})
+app.set('view engine', 'ejs');
+app.set('views', 'views');
 
-app.get('/about', (req, res)=>{
-    res.send("About page");
-})
 
-app.get('/services',(req, res)=>{
-    res.send("Services Page");
-})
+const homeroute = require("./app/routes/homeroute");
+app.use(homeroute);
 
-app.get('/contact', (req, res)=>{
-    res.send("Contact Page");
-})
+
+const aboutroute = require("./app/routes/aboutroute");
+app.use(aboutroute);
+
 
 const port = 3305;
 
