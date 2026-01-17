@@ -1,14 +1,22 @@
+
 const express = require('express');
 
 const app = express();
 
+//ejs template engine
+const ejs = require('ejs');
+
+app.set('view engine', 'ejs');
+app.set('views', 'views');
+
 const homeroute =require('./app/routes/homeroute');
 app.use(homeroute);
 
-app.get('/about', (req, res)=>{
+const aboutroute =require('./app/routes/aboutroute');
+app.use(aboutroute);
 
-    res.send("About Page");
-})
+const contactroute = require('./app/routes/contactroute');
+app.use(contactroute);
 
 
 const port = 3306;
