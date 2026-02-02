@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="icon" href="./Indeed.png" sizes="32x32" type="image/png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+</head>
+
+<body>
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-xl navbar-dark bg-secondary my-0">
+        <div class="container">
+            <a class="navbar-brand col-lg-3 fs-1" href="index.html">indeed</a> <button class="navbar-toggler"
+                type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample06"
+                aria-controls="navbarsExample06" aria-expanded="false" aria-label="Toggle navigation"> <span
+                    class="navbar-toggler-icon"></span> </button>
+            <div class="collapse navbar-collapse" id="navbarsExample06">
+                <ul class="navbar-nav col-xl-6 col-12 mx-auto justify-content-center mb-2 mb-xl-auto">
+                    <li class="nav-item"> <a class="nav-link active mx-3 fs-5" aria-current="page"
+                            href="index.html">Home</a> </li>
+                    <li class="nav-item"> <a class="nav-link mx-3 fs-5" href="#">About Us</a> </li>
+                    <li class="nav-item"> <a class="nav-link mx-3 fs-5" href="#">Blogs</a> </li>
+                    <li class="nav-item"> <a class="nav-link mx-3 fs-4" href="#">Contact</a> </li>
+                </ul>
+                <div class="d-lg-flex col-xl-3 col-12 justify-content-xl-end justify-content-start"> <a href="#"
+                        class="btn btn-light btn-lg"><i class="bi bi-person-circle mx-2"></i>Post Jobs</a> </div>
+            </div>
+        </div>
+    </nav>
+    <!-- End Of Navbar -->
+
+    <!-- Card -->
+
+    <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 my-5 py-3">
+            <% data.map(user =>{ %>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <!-- <img src="<%= user.thumbnailUrl %>" class="card-img-top" alt="..."> -->
+                        <div class="card-body">
+                            <h3 class="card-title lead fw-bold">
+                                <%= user.name %>
+                            </h3>
+                            <h5 class="card-subtitle lead mb-2 fw-normal">
+                                <%= user.username %>
+                            </h5>
+                            <h4 class="card-subtitle lead mb-2 fw-normal">
+                                <%= user.email %>
+                            </h4>
+                            <h4 class="card-subtitle lead mb-2 fw-normal">
+                                <%= user.phone %>
+                            </h4>
+                            <h4 class="card-subtitle lead mb-2 fw-normal">
+                                <%= user.website %>
+                            </h4>
+                            <p class="card-text lead fw-normal">
+                                <%= user.title %>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            <% }); %>
+        </div>
+    </div>
+
+    <!-- End of Card -->
+
+
+
+
+
+
+
+    <section class="footer pt-5 bg-secondary">
+        <div class="container">
+            <footer class="pt-3">
+                <div class="row">
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5 class="text-white fs-5">Section</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white fs-5">Home</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white fs-5">Features</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white fs-5">Pricing</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white fs-5">FAQs</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white fs-5">About</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5 class="text-white fs-5 fs-5">Section</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white fs-5">Home</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white fs-5">Features</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white fs-5">Pricing</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white fs-5">FAQs</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white fs-5">About</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5 class="text-white fs-5 fs-5">Section</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white fs-5">Home</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white fs-5">Features</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white fs-5">Pricing</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white fs-5">FAQs</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white fs-5">About</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-5 offset-md-1 mb-3">
+                        <form>
+                            <h4 class="text-white">Subscribe to our newsletter</h4>
+                            <p class="lead text-white">Monthly digest of what's new and exciting from us.</p>
+                            <div class="d-flex flex-column flex-sm-row w-100 gap-2"> <label for="newsletter1"
+                                    class="visually-hidden">Email address</label> <input id="newsletter1" type="email"
+                                    class="field-control" placeholder="Email address"> <button class="btn btn-dark btn-lg"
+                                    type="button">Subscribe</button> </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="d-flex flex-column flex-sm-row justify-content-between py-2 my-0 border-top">
+                    <p class="pt-3 lead text-white">© 2025 Company, Inc. All rights reserved.</p>
+                    <ul class="list-unstyled d-flex">
+                        <li class="ms-3"><a class="link-body-emphasis" href="#" aria-label="Instagram"><svg class="bi"
+                                    width="24" height="24">
+                                    <use xlink:href="#instagram"></use>
+                                </svg></a></li>
+                        <li class="ms-3"><a class="link-body-emphasis" href="#" aria-label="Facebook"><svg class="bi"
+                                    width="24" height="24" aria-hidden="true">
+                                    <use xlink:href="#facebook"></use>
+                                </svg></a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    </body>
+
+    </html>

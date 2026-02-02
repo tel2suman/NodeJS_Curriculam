@@ -1,7 +1,7 @@
 
 class HomeController {
 
-    async index(req, res) {
+    async user(req, res) {
         try {
             res.render("home", {
                 title: "Home Page",
