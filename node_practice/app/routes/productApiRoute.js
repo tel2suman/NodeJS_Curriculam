@@ -1,0 +1,18 @@
+
+const express = require('express');
+
+const ProductApiController = require('../controllers/ProductApiController');
+
+const router = express.Router();
+
+router.post('/create/product', ProductApiController.createProduct);
+
+router.get('/product', ProductApiController.viewProduct);
+
+router.get('/edit/:id', ProductApiController.editProduct);
+
+router.put('/update/:id', ProductApiController.updateProduct);
+
+router.delete('/delete/:id', ProductApiController.deleteProduct);
+
+module.exports = router;

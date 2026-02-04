@@ -46,7 +46,8 @@ app.use("/api/v1", studentApiRoute);
 const userApiRoute = require("./app/routes/userApiRoute");
 app.use("/api/v2", userApiRoute);
 
-
+const productApiRoute = require("./app/routes/productApiRoute");
+app.use('/api/pro1', productApiRoute);
 
 
 
