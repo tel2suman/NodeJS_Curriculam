@@ -127,6 +127,7 @@ class ProductApiController {
             return res.status(200).json({
                 success: true,
                 message: "product deleted successfully",
+                data: data,
             });
 
         } catch (error) {
